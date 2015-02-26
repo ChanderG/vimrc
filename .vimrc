@@ -23,6 +23,7 @@ set wildmenu
 
 "set semi-colon to colon
 nore ; :
+nore : ;
 
 "dark background color
 set background=light
@@ -35,9 +36,24 @@ let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -
 "shift >>/<< width
 set shiftwidth=2
 
-set tabstop=2
+set tabstop=8
 
 "Use Enter/Shift-Enter to introduce new lines above/below w/o leaving normal mode
 map <Enter> o<ESC>
 map <S-Enter> O<ESC>
 
+"""setup vundle
+set nocompatible
+filetype off 
+
+set rtp^=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+"""manage vundle
+Plugin 'gmarik/Vundle.vim'
+
+"""scala highlighting
+Plugin 'derekwyatt/vim-scala'
+
+call vundle#end()
+filetype plugin indent on
