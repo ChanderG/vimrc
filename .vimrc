@@ -55,5 +55,15 @@ Plugin 'gmarik/Vundle.vim'
 """scala highlighting
 Plugin 'derekwyatt/vim-scala'
 
+"""License adder
+Plugin 'antoyo/vim-licenses'
+
+"""racket highlighting
+Plugin 'wlangstroth/vim-racket'
+
 call vundle#end()
 filetype plugin indent on
+
+"""For the License Adder
+let g:licenses_authors_name = 'Govindarajan, Chander <chandergovind@gmail.com>'
+let g:licenses_copyright_holders_name = 'Govindarajan, Chander <chandergovind@gmail.com>'
