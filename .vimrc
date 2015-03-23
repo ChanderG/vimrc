@@ -28,11 +28,6 @@ nore : ;
 "dark background color
 set background=light
 
-"Ctrlp fuzzy finder : thanks to Robin Ward
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-"for quick indexing by using git file listing => no files from gitignore, but untracked files
-let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -co']
-
 "shift >>/<< width
 set shiftwidth=2
 
@@ -52,6 +47,9 @@ call vundle#begin()
 """manage vundle
 Plugin 'gmarik/Vundle.vim'
 
+"""CtrlP plugin
+Plugin 'kien/ctrlp.vim'
+
 """scala highlighting
 Plugin 'derekwyatt/vim-scala'
 
@@ -63,6 +61,11 @@ Plugin 'wlangstroth/vim-racket'
 
 call vundle#end()
 filetype plugin indent on
+
+"Ctrlp fuzzy finder : thanks to Robin Ward
+"set runtimepath^=~/.vim/bundle/ctrlp.vim
+"for quick indexing by using git file listing => no files from gitignore, but untracked files
+let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -co']
 
 """For the License Adder
 let g:licenses_authors_name = 'Govindarajan, Chander <chandergovind@gmail.com>'
