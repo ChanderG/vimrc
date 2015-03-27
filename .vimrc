@@ -59,6 +59,10 @@ Plugin 'antoyo/vim-licenses'
 """racket highlighting
 Plugin 'wlangstroth/vim-racket'
 
+"""snippet plugin - experiment
+Bundle 'Shougo/neosnippet'
+Bundle 'Shougo/neosnippet-snippets'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -70,3 +74,8 @@ let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -
 """For the License Adder
 let g:licenses_authors_name = 'Govindarajan, Chander <chandergovind@gmail.com>'
 let g:licenses_copyright_holders_name = 'Govindarajan, Chander <chandergovind@gmail.com>'
+
+""" for neosnippet
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
