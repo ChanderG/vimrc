@@ -63,6 +63,9 @@ Plugin 'wlangstroth/vim-racket'
 Bundle 'Shougo/neosnippet'
 Bundle 'Shougo/neosnippet-snippets'
 
+"""org-mode 
+Bundle 'jceb/vim-orgmode'
+
 call vundle#end()
 filetype plugin indent on
 
