@@ -31,7 +31,8 @@ set background=light
 "shift >>/<< width
 set shiftwidth=2
 
-set tabstop=8
+set tabstop=4
+set softtabstop=4
 
 "Use Enter/Shift-Enter to introduce new lines above/below w/o leaving normal mode
 map <Enter> o<ESC>
